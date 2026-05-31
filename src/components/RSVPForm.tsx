@@ -33,11 +33,9 @@ const RSVPForm: React.FC = () => {
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
     dispatch(submitRSVPStart());
-
-    // Simulate API call
+    //если прикрутить АПИ и БД для сообщений, то можно будет попробовать
     setTimeout(() => {
       try {
-        // Here would be the actual API call
         console.log("RSVP submitted:", guestInfo);
         dispatch(submitRSVPSuccess());
       } catch (err) {

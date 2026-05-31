@@ -1,22 +1,24 @@
 import React from "react";
 
 const PhotoGallery: React.FC = () => {
-  const photos = [
-    { id: 1, alt: "Фото жениха и невесты" },
-    { id: 2, alt: "Совместное фото" },
+  const photoNames = [
+    { id: 1, alt: "Фото жениха" },
+    { id: 2, alt: "Фото невесты" },
     { id: 3, alt: "Фото влюбленной пары" },
   ];
 
   return (
     <div className="photo-gallery">
-      <h2>Наша история любви</h2>
+      {/* <h2>Наши фото</h2> */}
       <div className="gallery-grid">
-        {photos.map((photo) => (
+        {photoNames.map((photo) => (
           <div key={photo.id} className="photo-item">
-            <div className="photo-placeholder">
-              <span>Фото {photo.id}</span>
-            </div>
-            <p>{photo.alt}</p>
+            <img
+              src={`/wedding/photo-${photo.id}.jpg`}
+              alt={photo.alt}
+              className="photo-placeholder"
+              loading="lazy"
+            />
           </div>
         ))}
       </div>

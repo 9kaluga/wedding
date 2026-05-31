@@ -41,7 +41,7 @@ body {
 
 .couple-name {
   font-size: 2.5rem;
-  color: #d32f2f; /* красный цвет */
+  color: #8b0000;
   margin: 0;
   text-transform: uppercase;
   letter-spacing: 3px;
@@ -65,6 +65,10 @@ body {
   margin: 30px 0;
 }
 
+.photo-gallery h2{
+  text-align: center;
+}
+
 .gallery-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
@@ -74,6 +78,14 @@ body {
 
 .photo-item {
   text-align: center;
+}
+.photo-item img {
+  width: 100%;
+  height: 480px;
+  object-fit: cover;
+  object-position: center;
+  border: 2px solid #eee;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
 }
 
 .photo-placeholder {
@@ -132,7 +144,7 @@ body {
 }
 
 .map-section h2 {
-  color: #d32f2f;
+  color: #8b0000;
   text-align: center;
 }
 
@@ -227,25 +239,208 @@ body {
   padding: 20px;
 }
 
-/* Стили для мобильных устройств */
+/* === СВАДЕБНОЕ РАСПИСАНИЕ === */
+
+.schedule-section {
+  margin: 40px 0;
+  position: relative;
+  padding: 0 20px;
+}
+
+.schedule-title {
+  font-size: 2.8rem;
+  color: #8b0000;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 4px;
+  font-weight: bold;
+  position: relative;
+  margin-bottom: 30px;
+  font-family: 'Georgia', serif;
+}
+
+.schedule-title::before,
+.schedule-title::after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  width: 120px;
+  height: 2px;
+  background: linear-gradient(to right, transparent, #d32f2f, transparent);
+}
+
+.schedule-title::before {
+  left: 0;
+}
+.schedule-title::after {
+  right: 0;
+}
+
+/* Узоры по углам — инлайн SVG (народный орнамент) */
+.schedule-section::before,
+.schedule-section::after {
+  content: '';
+  position: absolute;
+  width: 180px;
+  height: 180px;
+  background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Cpath d='M0,50 Q25,0 50,25 Q75,0 100,50 Q75,100 50,75 Q25,100 0,50 Z' fill='%23d32f2f' opacity='0.15'/%3E%3C/svg%3E") no-repeat;
+  background-size: contain;
+  z-index: -1;
+}
+
+.schedule-section::before {
+  top: -40px;
+  left: -40px;
+  transform: rotate(-45deg);
+}
+
+.schedule-section::after {
+  bottom: -40px;
+  right: -40px;
+  transform: rotate(135deg);
+}
+
+.schedule-grid {
+  display: grid;
+  gap: 25px;
+}
+
+.schedule-item {
+  background: white;
+  border-radius: 12px;
+  padding: 20px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  position: relative;
+  overflow: hidden;
+  border-left: 4px solid #d32f2f;
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+
+.schedule-item.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Анимация появления (при загрузке) */
+@media (prefers-reduced-motion: no-preference) {
+  .schedule-item {
+    animation: fadeInUp 0.8s forwards;
+  }
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Блок времени */
+.time-block {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-bottom: 12px;
+}
+
+.date {
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #8b0000;
+  letter-spacing: 1px;
+}
+
+.time {
+  font-size: 1.4rem;
+  font-weight: bold;
+  color: #8b0000;
+  letter-spacing: 1px;
+}
+
+/* Содержимое события */
+.event-content h3 {
+  font-size: 1.6rem;
+  color: #5a2a27;
+  margin: 0 0 8px 0;
+  font-weight: 700;
+  text-transform: uppercase;
+  position: relative;
+}
+
+.event-content h3::after {
+  content: '';
+  position: absolute;
+  bottom: -6px;
+  left: 0;
+  width: 60px;
+  height: 2px;
+  background: #d32f2f;
+}
+
+.event-place {
+  font-size: 1.1rem;
+  color: #333;
+  font-weight: 600;
+  margin: 6px 0;
+}
+
+.event-guests {
+  font-size: 0.95rem;
+  color: #666;
+  font-style: italic;
+  padding-top: 8px;
+  border-top: 1px dashed #eee;
+}
+
+/* Народный стиль: курсив + текстура */
+.event-title,
+.event-place {
+  font-family: 'Times New Roman', serif;
+}
+
+/* Мобильная адаптация */
 @media (max-width: 600px) {
   .app {
     padding: 10px;
   }
-  
+
   .couple-name {
     font-size: 2rem;
   }
-  
+
   .timer-container {
     flex-wrap: wrap;
   }
-  
+
   .number {
     font-size: 2rem;
   }
-  
+
   .gallery-grid {
     grid-template-columns: 1fr;
+  }
+
+  .schedule-title {
+    font-size: 2.2rem;
+    margin-bottom: 20px;
+  }
+
+  .schedule-item {
+    padding: 16px;
+  }
+
+  .time {
+    font-size: 1.3rem;
+  }
+
+  .schedule-section::before,
+  .schedule-section::after {
+    display: none;
   }
 }
