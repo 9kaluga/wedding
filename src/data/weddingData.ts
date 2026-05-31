@@ -3,7 +3,8 @@ export const weddingData = {
     groom: "Дмитрий",
     bride: "Юлия",
   },
-  date: "18 сентября 2026 года",
+  date: new Date("2026-08-15T14:00:00"),
+  iventDate: "18 сентября 2026 года",
   time: "17:30",
   location: {
     name: "Дом",

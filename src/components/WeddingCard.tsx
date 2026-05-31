@@ -21,7 +21,7 @@ const WeddingCard: React.FC = () => {
       <div className="card-body">
         <div className="event-details">
           <h2>Дата и время</h2>
-          <p className="date">{weddingData.date}</p>
+          <p className="date">{weddingData.iventDate}</p>
           <p className="time">в {weddingData.time}</p>
 
           <h2>Место проведения</h2>
