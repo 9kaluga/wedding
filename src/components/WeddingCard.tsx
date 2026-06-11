@@ -34,7 +34,7 @@ const WeddingCard: React.FC = () => {
             <p className="date">{weddingData.iventDate}</p>
             <p className="time">в {weddingData.time}</p>
 
-            <h2>Место проведения</h2>
+            <h2>Место волшебное</h2>
             <p className="location">{weddingData.location.name}</p>
             <p className="address">{weddingData.location.address}</p>
 
@@ -47,7 +47,6 @@ const WeddingCard: React.FC = () => {
           Ждём вас с радостью великой! <br />
           Ваши Дмитрий да Юлия
         </p>
-        {/* </div> */}
       </div>
       <PhotoGallery />
     </>

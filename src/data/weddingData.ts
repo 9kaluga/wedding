@@ -7,7 +7,7 @@ export const weddingData = {
   iventDate: "18 сентября 2026 года",
   time: "17:30",
   location: {
-    name: "Дом",
+    name: "Терем",
     address:
       "г. Самара, пгт. Петра Дубрава, сдт. Дубрава, ул. Вишневая, д. 986",
     coordinates: [50.37733, 53.3003],
