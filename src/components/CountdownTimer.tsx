@@ -36,7 +36,7 @@ const CountdownTimer: React.FC = () => {
 
   return (
     <div className="countdown-timer">
-      <h2>До свадьбы осталось:</h2>
+      <h2>Когда сказка станет былью:</h2>
       <div className="timer-container">
         <div className="time-unit">
           <span className="number">

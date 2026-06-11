@@ -12,8 +12,20 @@ const WeddingCard: React.FC = () => {
           </h1>
           <div className="divider"></div>
           <p className="invitation-text">
-            Приглашаем на нашу свадьбу! <br />
-            Чтобы вместе разделить этот важный момент в нашей жизни
+            В некотором царстве, <br />
+            в нашем государстве,
+            <br />
+            жили-были Дмитрий да Юлия.
+            <br />
+            Да так крепко друг друга полюбили,
+            <br />
+            что решили больше не испытывать судьбу, <br />
+            а стать мужем и женой.
+            <br />
+            И зовут они вас, гости дорогие,
+            <br />
+            на праздник любви и счастья.
+            <br />
           </p>
         </div>
         <div className="card-body">
@@ -30,6 +42,12 @@ const WeddingCard: React.FC = () => {
             <p className="dress-code">{weddingData.dressCode}</p>
           </div>
         </div>
+        <div className="divider"></div>
+        <p className="invitation-text">
+          Ждём вас с радостью великой! <br />
+          Ваши Дмитрий да Юлия
+        </p>
+        {/* </div> */}
       </div>
       <PhotoGallery />
     </>
