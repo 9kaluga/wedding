@@ -5,8 +5,7 @@ export const ChatLink = () => {
     <div
       style={{
         textAlign: "center",
-        marginBottom: "15px",
-        marginTop: "15px",
+        marginBottom: "150px",
         fontSize: "20px",
         color: "#666",
         zIndex: 1002,
