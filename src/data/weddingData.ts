@@ -7,12 +7,13 @@ export const weddingData = {
   iventDate: "18 сентября 2026 года",
   time: "17:30",
   location: {
-    name: "Терем",
+    name: "Терем по адрусу:",
     address:
       "г. Самара, пгт. Петра Дубрава, сдт. Дубрава, ул. Вишневая, д. 986",
     coordinates: [50.37733, 53.3003],
   },
   dressCode: "Формальный, бежевые тона",
+  chatLink: "https://vk.me/join/Qk9qST9Tj3bEVOQ44urc0a0Hf3IbB9WdIqM=",
   registry: [
     { name: "Банковский счет", details: "Реквизиты для подарков" },
     { name: "Деньги", details: "В конвертах" },

@@ -8,7 +8,7 @@ const MapSection: React.FC = () => {
 
   return (
     <div className="map-section">
-      <h2>Где соберётся честной народ</h2>
+      <h2>Расположение терема на карте, где собирается честной народ</h2>
       <iframe
         title="location-map"
         width="100%"

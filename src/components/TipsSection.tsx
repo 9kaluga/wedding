@@ -5,12 +5,12 @@ const TipsSection: React.FC = () => {
     <div
       className="tips-section"
       style={{
-        backgroundColor: "white",
+        backgroundColor: "#fffaf0",
         padding: "25px",
         borderRadius: "10px",
         boxShadow: "0 4px 12px rgba(0,0,0,0.1)",
         margin: "30px 0",
-        borderLeft: "4px solid #d32f2f", // Акцентная полоса слева
+        borderLeft: "4px solid #d32f2f",
       }}
     >
       <h2
@@ -47,7 +47,7 @@ const TipsSection: React.FC = () => {
             <li>Улыбку, что светлее солнышка;</li>
             <li>Настроеньице радостное;</li>
             <li>Аппетит богатырский;</li>
-            <li>500 рубликов в кармане, на выкупы да призы разные!</li>
+            <li>500 рубликов в кармане, на выкупы да конкурсы разные!</li>
           </ul>
         </div>
 
@@ -81,7 +81,24 @@ const TipsSection: React.FC = () => {
           <ul style={{ textAlign: "left", paddingLeft: "20px", color: "#333" }}>
             <li>Пировать;</li>
             <li>Воспоминания счастливые ловить;</li>
-            <li>Да добрые фотографии для памяти с нами творить!</li>
+            <li>Добрые фотографии для памяти с нами творить;</li>
+          </ul>
+        </div>
+        <div style={{ flex: "1", minWidth: "250px" }}>
+          <h3
+            style={{
+              color: "#d32f2f",
+              marginBottom: "10px",
+              fontSize: "1.3rem",
+            }}
+          >
+            На заметку:
+          </h3>
+          <ul style={{ textAlign: "left", paddingLeft: "20px", color: "#333" }}>
+            <li>
+              Вместо букетов будем рады бутылке вина. Её мы откроем на
+              годовщину!
+            </li>
           </ul>
         </div>
       </div>

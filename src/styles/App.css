@@ -15,7 +15,7 @@ body {
 
 /* Стили карточки приглашения */
 .wedding-card {
-  background: white;
+  background: #fffaf0;
   border-radius: 10px;
   box-shadow: 0 4px 12px rgba(0,0,0,0.1);
   padding: 30px;
@@ -55,9 +55,59 @@ body {
 }
 
 .invitation-text {
-  font-style: italic;
   font-size: 1.2rem;
   color: #5a5a5a;
+}
+
+/* Цветовая палитра */
+.color-palette {
+  margin-top: 20px;
+}
+
+.color-palette h3 {
+  font-family: 'Inter', sans-serif;
+  font-size: 1.1rem;
+  color: #5a5a5a;
+  margin: 10px 0 15px;
+  font-weight: 600;
+}
+
+.color-swatches {
+  display: flex;
+  justify-content: center;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+.color-swatch {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  cursor: default;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  position: relative;
+}
+
+.color-swatch::after {
+  content: attr(title);
+  position: absolute;
+  bottom: 100%;
+  left: 50%;
+  transform: translateX(-50%) translateY(-6px);
+  background: rgba(0,0,0,0.8);
+  color: white;
+  padding: 4px 8px;
+  font-size: 0.75rem;
+  border-radius: 4px;
+  white-space: nowrap;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.3s;
+}
+
+.color-swatch:hover::after {
+  opacity: 1;
+  visibility: visible;
 }
 
 /* Стили фотогалереи */
@@ -126,7 +176,7 @@ body {
   font-size: 2.5rem;
   font-weight: bold;
   color: #d32f2f;
-  background: white;
+  background: #fffaf0;
   padding: 10px 15px;
   border-radius: 8px;
   box-shadow: 0 2px 6px rgba(0,0,0,0.1);
@@ -151,12 +201,11 @@ body {
 .map-address {
   text-align: center;
   margin-top: 10px;
-  font-style: italic;
 }
 
 /* Стили формы RSVP */
 .rsvp-form {
-  background: white;
+  background: #fffaf0;
   padding: 25px;
   border-radius: 8px;
   box-shadow: 0 2px 8px rgba(0,0,0,0.1);
@@ -222,13 +271,13 @@ body {
 }
 
 .submit-btn:disabled {
-  background: #cccccc;
+  background: #fffaf0;
   cursor: not-allowed;
 }
 
 .error-message {
   color: #d32f2f;
-  background: #ffebee;
+  background: #fffaf0;
   padding: 10px;
   border-radius: 4px;
   margin-bottom: 15px;
@@ -306,7 +355,7 @@ body {
 }
 
 .schedule-item {
-  background: white;
+  background: #fffaf0;
   border-radius: 12px;
   padding: 20px;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
@@ -393,7 +442,6 @@ body {
 .event-guests {
   font-size: 0.95rem;
   color: #666;
-  font-style: italic;
   padding-top: 8px;
   border-top: 1px dashed #eee;
 }
@@ -401,7 +449,7 @@ body {
 /* Народный стиль: курсив + текстура */
 .event-title,
 .event-place {
-  font-family: 'Times New Roman', serif;
+  font-family: 'Georgia', serif;
 }
 
 /* Мобильная адаптация */

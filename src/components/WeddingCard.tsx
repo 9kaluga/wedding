@@ -28,18 +28,45 @@ const WeddingCard: React.FC = () => {
             <br />
           </p>
         </div>
+        <div className="divider"></div>
         <div className="card-body">
           <div className="event-details">
             <h2>Дата и время</h2>
             <p className="date">{weddingData.iventDate}</p>
             <p className="time">в {weddingData.time}</p>
+            <div className="divider"></div>
 
             <h2>Место волшебное</h2>
             <p className="location">{weddingData.location.name}</p>
             <p className="address">{weddingData.location.address}</p>
+            <div className="divider"></div>
 
-            <h2>Одежда</h2>
+            <h2>Стиль и цветовая палитра нарядов гостей дорогих </h2>
             <p className="dress-code">{weddingData.dressCode}</p>
+            <div className="color-palette">
+              <div className="color-swatches">
+                <div
+                  className="color-swatch"
+                  style={{ backgroundColor: "#f5f5dc" }}
+                  title="Бежевый"
+                ></div>
+                <div
+                  className="color-swatch"
+                  style={{ backgroundColor: "#98623bff" }}
+                  title="Коричневый"
+                ></div>
+                <div
+                  className="color-swatch"
+                  style={{ backgroundColor: "#ba3c3cff" }}
+                  title="Красный"
+                ></div>
+                <div
+                  className="color-swatch"
+                  style={{ backgroundColor: "#7a9153ff" }}
+                  title="Зелёный"
+                ></div>
+              </div>
+            </div>
           </div>
         </div>
         <div className="divider"></div>

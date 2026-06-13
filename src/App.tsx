@@ -1,3 +1,4 @@
+import { ChatLink } from "./components/ChatLink";
 import CountdownTimer from "./components/CountdownTimer";
 import MapSection from "./components/MapSection";
 import RsvpConfirmation from "./components/RsvpConfirmation";
@@ -15,6 +16,7 @@ function App() {
       <TipsSection />
       <MapSection />
       <RsvpConfirmation />
+      <ChatLink />
     </div>
   );
 }
