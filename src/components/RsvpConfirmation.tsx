@@ -147,7 +147,7 @@ const RsvpConfirmation: React.FC = () => {
         padding: "30px 20px 20px 20px", // увеличен отступ сверху для надписи
         margin: "20px auto",
         maxWidth: "800px", // ширина основного контейнера
-        minHeight: "120px", // высота области для движения кнопки
+        minHeight: "150px", // высота области для движения кнопки
         // border: "1px solid red",
       }}
     >
