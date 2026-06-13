@@ -47,7 +47,7 @@ const WeddingCard: React.FC = () => {
               <div className="color-swatches">
                 <div
                   className="color-swatch"
-                  style={{ backgroundColor: "#f5f5dc" }}
+                  style={{ backgroundColor: "#ddddb7ff" }}
                   title="Бежевый"
                 ></div>
                 <div
