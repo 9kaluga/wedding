@@ -6,8 +6,12 @@ export const ChatLink = () => {
       style={{
         textAlign: "center",
         marginBottom: "150px",
+        padding: "15px",
         fontSize: "20px",
         color: "#666",
+        background: "#fffaf0",
+        borderRadius: "8px",
+        boxShadow: "0 2px 4px rgba(0,0,0,0.1)",
         zIndex: 1002,
       }}
     >

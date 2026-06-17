@@ -13,7 +13,7 @@ export const weddingData = {
     coordinates: [50.37733, 53.3003],
   },
   dressCode: "Формальный, бежевые тона",
-  chatLink: "https://vk.me/join/Qk9qST9Tj3bEVOQ44urc0a0Hf3IbB9WdIqM=",
+  chatLink: "https://vk.me/join/E4JevDvTNvZ9guxbwYRPP3Usz9mkHWDRdEM=",
   registry: [
     { name: "Банковский счет", details: "Реквизиты для подарков" },
     { name: "Деньги", details: "В конвертах" },

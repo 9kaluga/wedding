@@ -171,7 +171,7 @@ const RsvpConfirmation: React.FC = () => {
         className="rsvp-container"
         style={{
           position: "relative",
-          height: "100%", // Занимает оставшееся место внутри внешнего контейнера
+          height: "150px", // Занимает оставшееся место внутри внешнего контейнера
         }}
       >
         <button
@@ -183,8 +183,9 @@ const RsvpConfirmation: React.FC = () => {
           onMouseEnter={handleMouseEnter} // Добавляем обработчик наведения
           style={{
             position: "absolute",
-            left: `${buttonPosition.x}px`,
-            top: `${buttonPosition.y}px`,
+            // left: `${buttonPosition.x}px`,
+            // top: `${buttonPosition.y}px`,
+            transform: `translate(${buttonPosition.x}px, ${buttonPosition.y}px)`,
             width: "250px",
             height: "50px",
             fontSize: "18px",
@@ -194,7 +195,8 @@ const RsvpConfirmation: React.FC = () => {
             borderRadius: "8px",
             cursor: "pointer",
             boxShadow: "0 4px 8px rgba(255, 77, 77, 0.4)",
-            transition: "left 0.8s, top 0.8s, box-shadow 0.2s", // Плавное движение и переход тени
+            // transition: "left 0.8s, top 0.8s, box-shadow 0.2s", // Плавное движение и переход тени
+            transition: "transform 0.8s, box-shadow 0.2s",
             zIndex: 1000,
           }}
           onMouseDown={(e) => {

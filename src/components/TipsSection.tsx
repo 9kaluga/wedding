@@ -64,6 +64,7 @@ const TipsSection: React.FC = () => {
           <ul style={{ textAlign: "left", paddingLeft: "20px", color: "#333" }}>
             <li>Скуку точить;</li>
             <li>В сторонку грустить;</li>
+            <li>Голодными быть;</li>
             <li>Без плясок уходить!</li>
           </ul>
         </div>
@@ -96,8 +97,8 @@ const TipsSection: React.FC = () => {
           </h3>
           <ul style={{ textAlign: "left", paddingLeft: "20px", color: "#333" }}>
             <li>
-              Вместо букетов будем рады бутылке вина. Её мы откроем на
-              годовщину!
+              Вместо букетов будем рады бутылке красного полусладкого. Её мы
+              откроем на годовщину!
             </li>
           </ul>
         </div>

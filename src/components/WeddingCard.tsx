@@ -11,22 +11,16 @@ const WeddingCard: React.FC = () => {
             {weddingData.couple.groom} & {weddingData.couple.bride}
           </h1>
           <div className="divider"></div>
-          <p className="invitation-text">
-            В некотором царстве, <br />
-            в нашем государстве,
-            <br />
-            жили-были Дмитрий да Юлия.
-            <br />
-            Да так крепко друг друга полюбили,
-            <br />
-            что решили больше не испытывать судьбу, <br />
-            а стать мужем и женой.
-            <br />
-            И зовут они вас, гости дорогие,
-            <br />
-            на праздник любви и счастья.
-            <br />
-          </p>
+          <div className="invitation-text">
+            <p>В некотором царстве,</p>
+            <p>В нашем государстве,</p>
+            <p>Жили-были Дмитрий да Юлия.</p>
+            <p>Да так крепко друг друга полюбили,</p>
+            <p>Что решили больше не испытывать судьбу,</p>
+            <p>А стать мужем и женой.</p>
+            <p>И зовут они вас, гости дорогие,</p>
+            <p>На праздник любви и счастья.</p>
+          </div>
         </div>
         <div className="divider"></div>
         <div className="card-body">
@@ -70,10 +64,10 @@ const WeddingCard: React.FC = () => {
           </div>
         </div>
         <div className="divider"></div>
-        <p className="invitation-text">
-          Ждём вас с радостью великой! <br />
-          Ваши Дмитрий да Юлия
-        </p>
+        <div className="invitation-text">
+          <p>Ждём вас с радостью великой!</p>
+          <p>Ваши Дмитрий да Юлия</p>
+        </div>
       </div>
       <PhotoGallery />
     </>
