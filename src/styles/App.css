@@ -80,15 +80,16 @@ body {
 }
 
 .color-swatches {
-  display: flex;
-  justify-content: center;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
   gap: 12px;
-  flex-wrap: wrap;
+  max-width: 400px;
+  margin: 15px auto 0;
 }
 
 .color-swatch {
-  width: 32px;
-  height: 32px;
+  width: 64px;
+  height: 64px;
   border-radius: 50%;
   cursor: default;
   box-shadow: 0 2px 4px rgba(0,0,0,0.1);
@@ -96,7 +97,7 @@ body {
 }
 
 .color-swatch::after {
-  content: attr(title);
+  content: attr(data-title);
   position: absolute;
   bottom: 100%;
   left: 50%;
