@@ -62,10 +62,10 @@ const TipsSection: React.FC = () => {
             Чего делать воспрещается:
           </h3>
           <ul style={{ textAlign: "left", paddingLeft: "20px", color: "#333" }}>
-            <li>Скуку точить;</li>
+            <li>Скучать;</li>
             <li>В сторонку грустить;</li>
             <li>Голодными быть;</li>
-            <li>Без плясок уходить!</li>
+            {/* <li>Без плясок уходить!</li> */}
           </ul>
         </div>
 
