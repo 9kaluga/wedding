@@ -2,8 +2,8 @@ import React from "react";
 
 const PhotoGallery: React.FC = () => {
   const photoNames = [
-    { id: 1, alt: "Фото жениха" },
-    { id: 2, alt: "Фото невесты" },
+    // { id: 1, alt: "Фото жениха" },
+    // { id: 2, alt: "Фото невесты" },
     { id: 3, alt: "Фото влюбленной пары" },
   ];
 
